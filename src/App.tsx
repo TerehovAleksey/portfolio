@@ -1,6 +1,5 @@
 import React from 'react'
 import {Route, BrowserRouter, Routes} from "react-router-dom";
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -9,6 +8,7 @@ import Contacts from "./pages/Contacts";
 import ScrollToTop from "./utils/ScrollToTop";
 import {Provider} from "react-redux";
 import {store} from "./store/store";
+import PageLayout from "./layouts/PageLayout";
 
 function App() {
     return (
@@ -18,13 +18,14 @@ function App() {
                     <ScrollToTop/>
                     <Navbar/>
                     <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/projects" element={<Projects/>}/>
-                        <Route path="/project/:id" element={<Project/>}/>
-                        <Route path="/contacts" element={<Contacts/>}/>
+                        <Route path="/portfolio" element={<PageLayout/>}>
+                            <Route index element={<Home/>}/>
+                            <Route path="projects" element={<Projects/>}/>
+                            <Route path="project/:id" element={<Project/>}/>
+                            <Route path="contacts" element={<Contacts/>}/>
+                        </Route>
                     </Routes>
                 </BrowserRouter>
-                <Footer/>
             </Provider>
         </div>
     )

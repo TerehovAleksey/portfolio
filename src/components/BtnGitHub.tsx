@@ -1,13 +1,13 @@
 import React from 'react';
 import gh from "../assets/img/icons/gitHub-black.svg";
 
-interface BtnGitHubProps {
+type BtnGitHubProps = {
     link: string;
 }
 
-const BtnGitHub = (props: BtnGitHubProps) => {
+const BtnGitHub = ({link}: BtnGitHubProps) => {
     return (
-        <a href={props.link} target="_blank" rel="noreferrer" className="btn-outline">
+        <a href={link} target="_blank" rel="noreferrer" className="btn-outline">
             <img src={gh} alt=""/>
             GitHub repo
         </a>

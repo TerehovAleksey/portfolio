@@ -10,7 +10,7 @@ type ProjectProps = {
 const Project = ({project, index}: ProjectProps) => {
     return (
         <li className="project">
-            <NavLink to={`/project/${index}`}>
+            <NavLink to={`/portfolio/project/${index}`}>
                 <img src={project.img} alt={project.title} className="project__img"/>
                 <h3 className="project__title">{project.title}</h3>
             </NavLink>

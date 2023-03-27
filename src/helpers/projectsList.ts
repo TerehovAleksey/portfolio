@@ -8,9 +8,48 @@ import blog2 from "../assets/projects/microblog-02.png";
 import wallet from "../assets/projects/my-wallet.png";
 import wallet1 from "../assets/projects/my-wallet-01.png";
 import wallet2 from "../assets/projects/my-wallet-02.png";
+import courier from "../assets/projects/courier.png";
+import courier1 from "../assets/projects/courier-01.png";
+import courier2 from "../assets/projects/courier-02.png";
+import courier3 from "../assets/projects/courier-03.png";
+import portfolio from "../assets/projects/portfolio.png";
+import portfolio1 from "../assets/projects/portfolio-01.png";
+import portfolio2 from "../assets/projects/portfolio-02.png";
+import cv from "../assets/projects/cv.png";
+import cv1 from "../assets/projects/cv-01.png";
 import {IProjectItem} from "../interfaces/IProjectItem";
 
 const projects: IProjectItem[] = [
+    {
+        title: 'Portfolio',
+        skills: 'Vite, React/Redux',
+        img: portfolio,
+        imgBig: [portfolio1, portfolio2],
+        gitHubLink: 'https://github.com/TerehovAleksey/portfolio',
+        description_en: 'You are on this site now)',
+        description_ru: 'Вы сейчас на этом сайте)',
+        slug: 'portfolio'
+    },
+    {
+        title: 'CV',
+        skills: 'C#, Blazor, Firebase',
+        img: cv,
+        imgBig: [cv1],
+        gitHubLink: 'https://github.com/TerehovAleksey/my-cv',
+        description_en: 'Editable CV',
+        description_ru: 'Резюме с возможностью редактирования',
+        slug: 'sv'
+    },
+    {
+        title: 'Courier',
+        skills: 'Vite, React, Ant Design, Firebase',
+        img: courier,
+        imgBig: [courier1, courier2, courier3],
+        gitHubLink: 'https://github.com/TerehovAleksey/courier-telegram',
+        description_en: 'Delivery calculator for courier',
+        description_ru: 'Калькулятор доставок для курьера',
+        slug: 'courier'
+    },
     {
         title: 'Micro Blog',
         skills: 'Blazor, MSSQL, EF Core, WebAPI, Docker',
@@ -18,7 +57,8 @@ const projects: IProjectItem[] = [
         imgBig: [blog1, blog2],
         gitHubLink: 'https://github.com/TerehovAleksey/MicroBlog',
         description_en: 'Small personal blog',
-        description_ru: 'Небольшой личный блог'
+        description_ru: 'Небольшой личный блог',
+        slug: 'blog'
     },
     {
         title: 'My Wallet',
@@ -27,7 +67,8 @@ const projects: IProjectItem[] = [
         imgBig: [wallet1, wallet2],
         gitHubLink: 'https://github.com/TerehovAleksey/MyWallet',
         description_en: 'Wallet app (GooglePlay) clone.',
-        description_ru: 'Клон приложения Wallet (на GooglePlay).'
+        description_ru: 'Клон приложения Wallet (на GooglePlay).',
+        slug: 'wallet'
     },
     {
         title: 'Web Shop',
@@ -36,7 +77,8 @@ const projects: IProjectItem[] = [
         imgBig: [shop1, shop2, shop3],
         gitHubLink: 'https://github.com/TerehovAleksey/WebShop',
         description_en: 'A training project that was created as part of the C#, ASP.NET Core Developer course on the Geekbrains educational platform in 2018.',
-        description_ru: 'Учебный проект, который создавался в рамках обучения на курсе C#, ASP.NET Core Developer на образовательной платформе Geekbrains в 2018 году.'
+        description_ru: 'Учебный проект, который создавался в рамках обучения на курсе C#, ASP.NET Core Developer на образовательной платформе Geekbrains в 2018 году.',
+        slug: 'shop'
     },
 ]
 

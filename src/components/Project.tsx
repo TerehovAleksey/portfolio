@@ -4,13 +4,12 @@ import {IProjectItem} from "../interfaces/IProjectItem";
 
 type ProjectProps = {
     project: IProjectItem
-    index: number
 }
 
-const Project = ({project, index}: ProjectProps) => {
+const Project = ({project}: ProjectProps) => {
     return (
         <li className="project">
-            <NavLink to={`/portfolio/project/${index}`}>
+            <NavLink to={`/portfolio/project/${project.slug}`}>
                 <img src={project.img} alt={project.title} className="project__img"/>
                 <h3 className="project__title">{project.title}</h3>
             </NavLink>

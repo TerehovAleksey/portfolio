@@ -5,5 +5,6 @@ export interface IProjectItem {
     skills: string,
     img: string,
     imgBig: string[],
-    gitHubLink: string | undefined
+    gitHubLink: string | undefined,
+    slug: string
 }

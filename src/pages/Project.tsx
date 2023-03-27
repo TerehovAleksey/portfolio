@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {projects} from "../helpers/projectsList";
 import BtnGitHub from "../components/BtnGitHub";
@@ -8,8 +8,15 @@ import Carousel from "nuka-carousel";
 const Project = () => {
 
     const {id} = useParams();
-    const project = projects[Number.parseInt(id ? id : "0")];
     const {language} = useAppSelector(state => state.language);
+    const [project, setProject] = useState(projects[0]);
+
+    useEffect(() => {
+        const p = projects.find(p => p.slug === id);
+        if (p) {
+            setProject(p);
+        }
+    }, [id]);
 
     return (
         <main className="section">

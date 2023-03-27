@@ -14,11 +14,7 @@ const Projects = () => {
                     {language === 'ru' ? 'Проекты' : 'Projects'}
                 </h2>
                 <ul className="projects">
-                    {
-                        projects.map((v, i) => {
-                            return <Project key={v.title} project={v} index={i}/>
-                        })
-                    }
+                    {projects.map(v => <Project key={v.slug} project={v}/>)}
                 </ul>
             </div>
         </main>

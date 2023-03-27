@@ -374,12 +374,23 @@ body {
     border-radius: 10px;
 }
 
+.slider-container{
+    margin-bottom: 40px;
+}
+
+.paging-item{
+    margin: 0 10px;
+}
+
 .project-details__desc {
     margin-bottom: 30px;
+}
 
+.project-details__skills{
     font-weight: 700;
     font-size: 24px;
     line-height: 1.3;
+    margin-bottom: 10px;
 }
 
 /* Content list */

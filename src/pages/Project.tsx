@@ -16,7 +16,7 @@ const Project = () => {
             <div className="container">
                 <div className="project-details">
                     <h1 className="title-1">{project.title}</h1>
-                    <Carousel autoplay className="project-details__cover">
+                    <Carousel adaptiveHeight={false} autoplay={true} className="project-details__cover">
                         {
                             project.imgBig.map((i, ind) =>
                                 <img key={ind} src={i} alt="" className=""/>)

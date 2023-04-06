@@ -17,6 +17,7 @@ import portfolio1 from "../assets/projects/portfolio-01.png";
 import portfolio2 from "../assets/projects/portfolio-02.png";
 import cv from "../assets/projects/cv.png";
 import cv1 from "../assets/projects/cv-01.png";
+import cv2 from "../assets/projects/cv-02.png";
 import {IProjectItem} from "../interfaces/IProjectItem";
 
 const projects: IProjectItem[] = [
@@ -32,10 +33,10 @@ const projects: IProjectItem[] = [
     },
     {
         title: 'CV',
-        skills: 'C#, Blazor, Firebase',
+        skills: 'Vite, React, Firebase, Bootstrap',
         img: cv,
-        imgBig: [cv1],
-        gitHubLink: 'https://github.com/TerehovAleksey/my-cv',
+        imgBig: [cv1, cv2],
+        gitHubLink: 'https://github.com/TerehovAleksey/my-cv-react',
         description_en: 'Editable CV',
         description_ru: 'Резюме с возможностью редактирования',
         slug: 'sv'

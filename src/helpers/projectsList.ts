@@ -18,9 +18,23 @@ import portfolio2 from "../assets/projects/portfolio-02.png";
 import cv from "../assets/projects/cv.png";
 import cv1 from "../assets/projects/cv-01.png";
 import cv2 from "../assets/projects/cv-02.png";
+import food from "../assets/projects/pechorin.png";
+import food1 from "../assets/projects/pechorin-01.png";
+import food2 from "../assets/projects/pechorin-02.png";
+import food3 from "../assets/projects/pechorin-03.png";
 import {IProjectItem} from "../interfaces/IProjectItem";
 
 const projects: IProjectItem[] = [
+    {
+        title: 'Pechorin',
+        skills: 'NextJS, TailwindCSS, Redux, Prisma, PostgreSQL, NextAuth, Figma',
+        img: food,
+        imgBig: [food1, food2, food3],
+        slug: 'pechorin',
+        gitHubLink: undefined,
+        description_en: 'Wholesale food ordering app',
+        description_ru: 'Приложение для оптового заказа еды'
+    },
     {
         title: 'Portfolio',
         skills: 'Vite, React/Redux',
